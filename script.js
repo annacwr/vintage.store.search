@@ -595,42 +595,36 @@ if (storeId) {
 
         // Social Media Reviews
 
-        const reviewsContainer =
-            document.getElementById("socialReviews");
+        const reviewsContainer = document.getElementById("socialReviews");
 
-        reviewsContainer.innerHTML = "";
+if (reviewsContainer) {
+    reviewsContainer.innerHTML = "";
 
+    const reviews = store.reviews || [];
 
-        store.reviews.forEach(review => {
+    reviews.forEach(review => {
 
-            const reviewCard =
-                document.createElement("div");
+        const reviewCard = document.createElement("div");
 
-            reviewCard.classList.add("store-card");
+        reviewCard.classList.add("store-card");
 
+        reviewCard.innerHTML = `
+            <h4>${review.title}</h4>
 
-            reviewCard.innerHTML = `
+            <p>${review.caption}</p>
 
-        <h4>${review.title}</h4>
+            <a
+                href="${review.link}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View Original Post →
+            </a>
+        `;
 
-        <p>
-            ${review.caption}
-        </p>
-
-        <a
-            href="${review.link}"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            View Original Post
-        </a>
-
-    `;
-
-
-            reviewsContainer.appendChild(reviewCard);
-
-        });
+        reviewsContainer.appendChild(reviewCard);
+    });
+}
 
     }
 
