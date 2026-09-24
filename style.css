@@ -200,3 +200,49 @@ button:hover {
 .store-details a {
     color: #5c4033;
 }
+
+```css
+/* Social Media Reviews */
+
+.reviews-section {
+    margin-top: 40px;
+}
+
+.reviews-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 20px;
+}
+
+
+/* Review cards */
+
+.reviews-grid .store-card {
+    margin: 0;
+}
+
+.reviews-grid h4 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.reviews-grid a {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    color: #5c4033;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.reviews-grid a:hover {
+    text-decoration: underline;
+}
+```
