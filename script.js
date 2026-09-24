@@ -117,8 +117,8 @@ const stores = [
         ],
 
         brands: [
-            "miu miu",
-            "jean paul gaultier",
+            "miumiu",
+            "jeanpaulgaultier",
             "chanel"
         ],
 
