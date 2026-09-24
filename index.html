@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vintage Store Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Vintage Store Finder</h1>
+        <p>Find vintage stores based on your style, budget, and what you're looking for.</p>
+    </header>
+
+
+    <main>
+
+        <!-- Search -->
+        <section class="search-section">
+
+            <input type="text" id="searchInput" placeholder="Search store names...">
+            
+            <input type="text" id="locationInput" placeholder="Search cities...">
+
+        </section>
+
+
+        <!-- Filters -->
+        <section class="filters">
+
+            <div>
+                <label for="budgetFilter">Budget</label>
+
+                <select id="budgetFilter">
+                    <option value="all">Any Budget</option>
+                    <option value="low">$ - Budget</option>
+                    <option value="medium">$$ - Moderate</option>
+                    <option value="high">$$$ - Expensive</option>
+                </select>
+            </div>
+
+
+            <div>
+                <label for="styleFilter">Style</label>
+
+                <select id="styleFilter">
+                    <option value="all">Any Style</option>
+                    <option value="y2k">Y2K</option>
+                    <option value="western">Western</option>
+                    <option value="grunge">Grunge</option>
+                    <option value="classic">Classic</option>
+                    <option value="streetwear">Streetwear</option>
+                </select>
+            </div>
+
+
+            <div>
+                <label for="clothingFilter">Clothing</label>
+
+                <select id="clothingFilter">
+                    <option value="all">Any Clothing</option>
+                    <option value="tops">Tops</option>
+                    <option value="bottoms">Bottoms</option>
+                    <option value="dresses">Dresses</option>
+                    <option value="jackets">Jackets</option>
+                    <option value="accessories">Accessories</option>
+                </select>
+            </div>
+
+
+            <div>
+                <label for="brandFilter">Brands</label>
+
+                <select id="brandFilter">
+                    <option value="all">Any Brand</option>
+                    <option value="levis">Levi's</option>
+                    <option value="nike">Nike</option>
+                    <option value="adidas">Adidas</option>
+                    <option value="ralphlauren">Ralph Lauren</option>
+                    <option value="designer">Designer</option>
+                </select>
+            </div>
+
+
+            <button id="resetButton">
+                Reset Filters
+            </button>
+
+        </section>
+
+
+        <!-- Store Results -->
+        <section>
+
+            <h2>Stores</h2>
+
+            <div id="storeResults" class="store-grid">
+                <!-- JavaScript will add stores here -->
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
