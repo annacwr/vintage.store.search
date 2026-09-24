@@ -21,7 +21,8 @@ const stores = [
 
         brands: [
             "levis",
-            "nike"
+            "carhartt"
+            "patagonia"
         ],
 
         description:
@@ -69,6 +70,7 @@ const stores = [
 
         brands: [
             "ralphlauren"
+            "levis"
         ],
 
         description:
@@ -111,12 +113,13 @@ const stores = [
             "jackets",
             "bottoms",
             "accessories"
+            "bags"
         ],
 
         brands: [
-            "nike",
-            "adidas",
-            "designer"
+            "miu miu",
+            "jean paul gaultier",
+            "chanel"
         ],
 
         description:
@@ -132,13 +135,13 @@ const stores = [
             {
                 title: "Great place to shop",
                 caption:
-                    "This place has an amazing selection of vintage streetwear.",
+                    "This place has an amazing selection of vintage designer items.",
                 link:
                     "https://example.com/review3"
             },
 
             {
-                title: "Not affordable!",
+                title: "Great if you have no budget!",
                 caption:
                     "Super fashionable but expensive items.",
                 link:
@@ -164,8 +167,8 @@ const stores = [
         ],
 
         brands: [
-            "nike",
-            "designer"
+            "levis",
+            "chanel"
         ],
 
         description:
@@ -187,9 +190,9 @@ const stores = [
             },
 
             {
-                title: "Not affordable!",
+                title: "Great designer items on a budget",
                 caption:
-                    "Super fashionable but expensive items.",
+                    "Found some gorgeous vintage chanel here!",
                 link:
                     "https://example.com/review4"
             }
