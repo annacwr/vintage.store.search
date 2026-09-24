@@ -1,92 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Store Information</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
     <header>
         <h1 id="storeName">Store Name</h1>
+        <p id="storeLocation">Location</p>
     </header>
+
 
     <main>
 
-        <a href="index.html" class="back-link">← Back to Store Search</a>
-
-        <div class="store-layout">
-
-            <!-- LEFT COLUMN -->
-            <section class="store-main-info">
-
-                <p id="storeDescription" class="store-description">
-                    Store description
-                </p>
-
-                <div class="info-section">
-                    <strong>Location:</strong>
-                    <span id="storeAddress"></span>
-                </div>
-
-                <div class="info-section">
-                    <strong>Hours:</strong>
-                    <span id="storeHours"></span>
-                </div>
-
-                <div class="info-section">
-                    <strong>Website:</strong>
-                    <a id="storeWebsite" href="#" target="_blank">
-                        Visit Website
-                    </a>
-                </div>
-
-                <!-- SOCIAL MEDIA REVIEWS -->
-                <section class="reviews-section">
-
-                    <h2>Social Media Reviews:</h2>
-
-                    <div id="socialReviews" class="reviews-grid">
-                        <!-- Review cards added by JavaScript -->
-                    </div>
-
-                </section>
-
-            </section>
+        <a href="index.html">
+            ← Back to Store Search
+        </a>
 
 
-            <!-- RIGHT COLUMN -->
-            <aside class="store-sidebar">
+        <section class="store-details">
 
-                <div class="sidebar-section">
-                    <h3>Price Range:</h3>
-                    <p id="storeBudget" class="price-range"></p>
-                </div>
+            <h2 id="storeNameDetails"></h2>
 
-                <div class="sidebar-section">
-                    <h3>Style:</h3>
-                    <div id="storeStyles" class="tag-container"></div>
-                </div>
+            <p id="storeDescription"></p>
 
-                <div class="sidebar-section">
-                    <h3>Clothing:</h3>
-                    <div id="storeClothing" class="tag-container"></div>
-                </div>
 
-                <div class="sidebar-section">
-                    <h3>Brands:</h3>
-                    <div id="storeBrands" class="tag-container"></div>
-                </div>
+            <h3>Location</h3>
 
-            </aside>
+            <p id="storeAddress"></p>
 
-        </div>
+
+            <h3>Price Range</h3>
+
+            <p id="storeBudget"></p>
+
+
+            <h3>Style</h3>
+
+            <div id="storeStyles"></div>
+
+
+            <h3>Clothing</h3>
+
+            <div id="storeClothing"></div>
+
+
+            <h3>Brands</h3>
+
+            <div id="storeBrands"></div>
+
+
+            <h3>Hours</h3>
+
+            <p id="storeHours"></p>
+
+
+            <h3>Website</h3>
+
+            <a id="storeWebsite" href="#" target="_blank">
+                Visit Website
+            </a>
+
+            <h3>Social Media Reviews</h3> 
+            
+            <div id="socialReviews" class="reviews-grid"> 
+                <!-- Reviews will be added by JavaScript --> 
+            </div>
+
+        </section>
 
     </main>
+
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
