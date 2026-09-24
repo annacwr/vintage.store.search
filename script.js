@@ -31,7 +31,25 @@ const stores = [
             "Monday–Saturday: 10 AM–7 PM\nSunday: 12 PM–5 PM",
 
         website:
-            "https://example.com"
+            "https://example.com",
+
+        reviews: [
+            {
+                title: "Best vintage shop in New Orleans!",
+                caption:
+                    "Found the coolest vintage Levi's here. Definitely worth checking out if you love Y2K fashion.",
+                link:
+                    "https://example.com/review1"
+            },
+
+            {
+                title: "So many unique pieces",
+                caption:
+                    "I found an amazing vintage jacket and the staff was super helpful!",
+                link:
+                    "https://example.com/review2"
+            }
+        ]
     },
 
     {
@@ -60,7 +78,24 @@ const stores = [
             "Monday–Saturday: 11 AM–6 PM\nSunday: Closed",
 
         website:
-            "https://example.com"
+            "https://example.com",
+        reviews: [
+            {
+                title: "Great selection of western wear",
+                caption:
+                    "This place has an amazing selection of vintage western shirts.",
+                link:
+                    "https://example.com/review3"
+            },
+
+            {
+                title: "Really affordable!",
+                caption:
+                    "Found several pieces under $20. Great prices for vintage clothing.",
+                link:
+                    "https://example.com/review4"
+            }
+        ]
     },
 
     {
@@ -91,7 +126,25 @@ const stores = [
             "Monday–Saturday: 11 AM–6 PM\nSunday: Closed",
 
         website:
-            "https://example.com"
+            "https://example.com",
+
+        reviews: [
+            {
+                title: "Great place to shop",
+                caption:
+                    "This place has an amazing selection of vintage streetwear.",
+                link:
+                    "https://example.com/review3"
+            },
+
+            {
+                title: "Not affordable!",
+                caption:
+                    "Super fashionable but expensive items.",
+                link:
+                    "https://example.com/review4"
+            }
+        ]
     },
 
 
@@ -122,7 +175,26 @@ const stores = [
             "Monday–Saturday: 11 AM–6 PM\nSunday: Closed",
 
         website:
-            "https://example.com"
+            "https://example.com",
+
+        reviews: [
+            {
+                title: "Great place to shop",
+                caption:
+                    "This place has an amazing selection of vintage streetwear.",
+                link:
+                    "https://example.com/review3"
+            },
+
+            {
+                title: "Not affordable!",
+                caption:
+                    "Super fashionable but expensive items.",
+                link:
+                    "https://example.com/review4"
+            }
+        ]
+
     }
 
 ];
@@ -520,6 +592,45 @@ if (storeId) {
 
         document.getElementById("storeWebsite").href =
             store.website;
+
+        // Social Media Reviews
+
+        const reviewsContainer =
+            document.getElementById("socialReviews");
+
+        reviewsContainer.innerHTML = "";
+
+
+        store.reviews.forEach(review => {
+
+            const reviewCard =
+                document.createElement("div");
+
+            reviewCard.classList.add("store-card");
+
+
+            reviewCard.innerHTML = `
+
+        <h4>${review.title}</h4>
+
+        <p>
+            ${review.caption}
+        </p>
+
+        <a
+            href="${review.link}"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            View Original Post
+        </a>
+
+    `;
+
+
+            reviewsContainer.appendChild(reviewCard);
+
+        });
 
     }
 
