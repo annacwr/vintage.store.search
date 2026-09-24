@@ -66,7 +66,7 @@ const stores = [
     {
         id: 3,
         name: "Old School Clothing Co.",
-        location: "New Orleans, LA",
+        location: "Atlanta, GA",
         address: "123 Jane Street",
         budget: "high",
 
